@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Leapfrog Labs — Product Strategy &amp; Discovery</title>
+  <meta name="description" content="Leapfrog Labs helps organizations discover opportunities, validate ideas before investing heavily, and shape product strategies that create real customer and business value.">
+  <meta name="theme-color" content="#e6e6e3">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Leapfrog Labs — Product Strategy &amp; Discovery">
+  <meta property="og:description" content="Turn ideas into products people want. Fixed-scope discovery, strategy and validation sprints.">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts: preconnect then load. display=swap avoids invisible text on slow networks. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!--
+    SVG symbol library.
+    The logo mark is defined once here and referenced with <use> wherever it appears,
+    so its geometry lives in a single place. Colour comes from `currentColor`.
+  -->
+  <svg width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="lf-mark" viewBox="0 0 900 90">
+      <polygon points="0,0 897,44 0,34" fill="currentColor"/>
+      <polygon points="0,56 897,46 0,90" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <!-- Ambient background layers (purely decorative) -->
+  <div class="backdrop" aria-hidden="true">
+    <div class="backdrop__aura"></div>
+    <div class="backdrop__aura backdrop__aura--secondary"></div>
+    <div class="backdrop__grid"></div>
+    <div class="backdrop__scanlines"></div>
+    <div class="backdrop__grain"></div>
+  </div>
+
+  <!-- ============================================================= HEADER -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="logo" href="#top" aria-label="Leapfrog Labs — home">
+        <svg class="logo__mark" aria-hidden="true"><use href="#lf-mark"/></svg>
+        <span class="logo__word">LEAPFROG<small>LABS</small></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="#services">Services</a>
+        <a class="nav__link" href="#approach">Approach</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <span class="nav__divider" aria-hidden="true"></span>
+        <a class="btn btn--pill" href="#contact">Start a sprint</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- =========================================================== HERO -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="reveal">
+            <p class="tag">Product Strategy &amp; Discovery</p>
+            <h1 class="hero__title">Turn ideas into<br>products people <span class="accent">want.</span></h1>
+            <p class="lede">Building the right product starts long before the first line of code. I help organizations <strong>discover opportunities</strong>, <strong>validate ideas before investing heavily</strong>, and shape product strategies that create real customer and business value.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#services">View services</a>
+              <a class="btn btn--ghost" href="#approach">The approach</a>
+            </div>
+          </div>
+
+          <!-- Decorative targeting reticle -->
+          <div class="reveal">
+            <div class="reticle">
+              <div class="reticle__ring"><span class="reticle__dot"></span></div>
+              <svg class="reticle__mark" aria-hidden="true"><use href="#lf-mark"/></svg>
+              <span class="reticle__tag">// VALIDATE &rarr; BUILD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="rule"></div></div>
+
+    <!-- ========================================================= MANDATE -->
+    <section id="mandate">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <p class="eyebrow">001 — Mandate</p>
+            <h2 class="section-title">De-risk the decision<br>before you build.</h2>
+          </div>
+          <p class="section-head__index">[ STRATEGY · DISCOVERY · VALIDATION ]</p>
+        </header>
+
+        <div class="mandate__grid">
+          <p class="prose reveal">Whether you're exploring AI, launching a new product, or looking for your next growth opportunity, I bring a structured product approach to <span class="muted">reduce risk and accelerate learning</span> — so the resources you commit go toward the things evidence says are worth committing to.</p>
+
+          <!-- Concept map: an idea mapped for validated signal vs. open unknowns -->
+          <figure class="schematic reveal">
+            <svg class="schematic__art blueprint" viewBox="0 0 380 320" aria-hidden="true">
+              <path class="bp-frame" d="M12 28 V12 H28"/>
+              <path class="bp-frame" d="M352 12 H368 V28"/>
+              <path class="bp-frame" d="M368 292 V308 H352"/>
+              <path class="bp-frame" d="M28 308 H12 V292"/>
+              <text class="bp-tag" x="20" y="26">CONCEPT // 001</text>
+
+              <circle class="bp-dash" stroke-dasharray="3 4" cx="190" cy="170" r="88"/>
+
+              <line class="bp-accent" stroke-width="1.2" x1="190" y1="170" x2="300" y2="92"/>
+              <line class="bp-dash" stroke-dasharray="3 4" x1="190" y1="170" x2="320" y2="178"/>
+              <line class="bp-dash" stroke-dasharray="3 4" x1="190" y1="170" x2="274" y2="256"/>
+              <line class="bp-accent" stroke-width="1.2" x1="190" y1="170" x2="78" y2="120"/>
+              <line class="bp-dash" stroke-dasharray="3 4" x1="190" y1="170" x2="92" y2="240"/>
+
+              <line class="bp-line" x1="190" y1="152" x2="190" y2="188"/>
+              <line class="bp-line" x1="172" y1="170" x2="208" y2="170"/>
+              <rect class="bp-accent-fill" x="181" y="161" width="18" height="18" transform="rotate(45 190 170)"/>
+
+              <circle class="bp-accent-fill" cx="300" cy="92" r="5"/><text class="bp-label" x="311" y="90">SIGNAL</text>
+              <circle class="bp-hollow" cx="320" cy="178" r="5"/><text class="bp-label" x="300" y="198">UNKNOWN</text>
+              <circle class="bp-hollow" cx="274" cy="256" r="5"/><text class="bp-label" x="244" y="274">RISK?</text>
+              <circle class="bp-accent-fill" cx="78" cy="120" r="5"/><text class="bp-label" x="42" y="112">PROOF</text>
+              <circle class="bp-hollow" cx="92" cy="240" r="5"/><text class="bp-label" x="40" y="258">ASSUMPTION</text>
+            </svg>
+            <figcaption class="schematic__caption">FIG.01 — RAW IDEA, MAPPED FOR <b>SIGNAL</b> &amp; UNKNOWNS</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="rule"></div></div>
+
+    <!-- ======================================================== SERVICES -->
+    <section id="services">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <p class="eyebrow">002 — Engagements</p>
+            <h2 class="section-title">Services</h2>
+          </div>
+          <p class="section-head__index">[ 06 FIXED-SCOPE SPRINTS ]</p>
+        </header>
+
+        <div class="services">
+          <!-- Each <article> is one offering. Edit copy in place. -->
+          <article class="service reveal">
+            <p class="service__num">SVC—01</p>
+            <h3 class="service__title">AI Opportunity Sprint</h3>
+            <p class="service__punch">Discover where AI can create meaningful business value.</p>
+            <p>Together we'll identify high-impact opportunities, prioritize use cases, and create a practical roadmap for moving from experimentation to implementation.</p>
+            <p class="service__fit"><b>Perfect for</b>Organizations asking "How can AI actually help our business?"</p>
+          </article>
+
+          <article class="service reveal">
+            <p class="service__num">SVC—02</p>
+            <h3 class="service__title">Innovation Sprint</h3>
+            <p class="service__punch">Generate, explore, and prioritize your next opportunities.</p>
+            <p>Through collaborative workshops, customer insights, and technology exploration, we'll uncover new concepts worth pursuing — and identify which ones aren't.</p>
+            <p class="service__fit"><b>Perfect for</b>Companies looking for their next product, service, or business opportunity.</p>
+          </article>
+
+          <article class="service reveal">
+            <p class="service__num">SVC—03</p>
+            <h3 class="service__title">Product Discovery Sprint</h3>
+            <p class="service__punch">Before building, validate.</p>
+            <p>I'll help you understand customer problems, test assumptions, prototype solutions, and gather evidence that supports confident product decisions.</p>
+            <p class="service__fit"><b>Perfect for</b>Teams wanting to reduce risk before investing in development.</p>
+          </article>
+
+          <article class="service reveal">
+            <p class="service__num">SVC—04</p>
+            <h3 class="service__title">Product Strategy Sprint</h3>
+            <p class="service__punch">Turn promising ideas into a clear product direction.</p>
+            <p>Together we'll define your product vision, target customers, value proposition, success metrics, and strategic roadmap.</p>
+            <p class="service__fit"><b>Perfect for</b>Products that have momentum but need clearer focus.</p>
+          </article>
+
+          <article class="service reveal">
+            <p class="service__num">SVC—05</p>
+            <h3 class="service__title">Outcome-Driven Roadmapping</h3>
+            <p class="service__punch">Move beyond feature lists.</p>
+            <p>We'll create a roadmap centered on customer and business outcomes, ensuring every initiative supports measurable goals rather than simply delivering more functionality.</p>
+            <p class="service__fit"><b>Perfect for</b>Leadership teams seeking better prioritization and alignment.</p>
+          </article>
+
+          <article class="service reveal">
+            <p class="service__num">SVC—06</p>
+            <h3 class="service__title">Product Leadership Coaching</h3>
+            <p class="service__punch">Develop stronger product thinking across your org.</p>
+            <p>I coach founders, product managers, and leadership teams in product strategy, discovery, prioritization, stakeholder management, and decision making.</p>
+            <p class="service__fit"><b>Perfect for</b>Growing organizations building product capability.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="rule"></div></div>
+
+    <!-- ================================================ R&D FIELD NOTES -->
+    <section id="field-notes">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <p class="eyebrow">Field Notes — R&amp;D</p>
+            <h2 class="section-title">Ideas, caught early.</h2>
+          </div>
+          <p class="section-head__index">[ SKETCH · PROTOTYPE · EARLY BUILD ]</p>
+        </header>
+
+        <div class="frames">
+          <figure class="frame reveal">
+            <svg class="frame__art blueprint" viewBox="0 0 220 150" aria-hidden="true">
+              <path class="bp-tick" d="M10 18V10H18 M202 10H210V18 M210 132V140H202 M18 140H10V132"/>
+              <path class="bp-line" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"
+                    d="M110 36 C91 36 79 51 79 70 C79 85 90 93 95 101 L125 101 C130 93 141 85 141 70 C141 51 129 36 110 36 Z"/>
+              <path class="bp-line" stroke-width="1.2" stroke-linecap="round" d="M97 105 H123 M99 111 H121 M102 117 H118"/>
+              <path class="bp-accent" stroke-width="1.6" stroke-linecap="round" d="M106 58 L114 71 L107 71 L115 86"/>
+              <path class="bp-dim" stroke-dasharray="2 3" d="M151 55 l16 -9 M153 70 l18 0 M151 85 l16 9 M69 55 l-16 -9 M67 70 l-18 0 M69 85 l-16 9"/>
+              <text class="bp-label" x="14" y="26">v0 · SKETCH</text>
+            </svg>
+            <figcaption class="frame__meta">
+              <p class="frame__version">v0 — Sketch</p>
+              <h3 class="frame__title">The rough idea</h3>
+              <p>A hunch worth a look. Loose, unproven, and cheap to be wrong about.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="frame reveal">
+            <svg class="frame__art blueprint" viewBox="0 0 220 150" aria-hidden="true">
+              <path class="bp-tick" d="M10 18V10H18 M202 10H210V18 M210 132V140H202 M18 140H10V132"/>
+              <rect class="bp-line" x="70" y="50" width="80" height="48"/>
+              <line class="bp-line" x1="70" y1="64" x2="150" y2="64"/>
+              <circle class="bp-line" cx="84" cy="57" r="2.5"/>
+              <rect class="bp-line" x="80" y="72" width="28" height="18"/>
+              <line class="bp-line" x1="116" y1="76" x2="142" y2="76"/>
+              <line class="bp-line" x1="116" y1="84" x2="134" y2="84"/>
+              <rect class="bp-accent" stroke-dasharray="4 3" x="58" y="38" width="104" height="72"/>
+              <circle class="bp-accent" stroke-dasharray="4 3" cx="110" cy="74" r="3"/>
+              <line class="bp-dim" x1="58" y1="120" x2="162" y2="120"/>
+              <line class="bp-dim" x1="58" y1="116" x2="58" y2="124"/>
+              <line class="bp-dim" x1="162" y1="116" x2="162" y2="124"/>
+              <circle class="bp-accent-fill" cx="162" cy="38" r="3"/>
+              <text class="bp-label" x="14" y="26">v0.1 · PROTOTYPE</text>
+            </svg>
+            <figcaption class="frame__meta">
+              <p class="frame__version">v0.1 — Prototype</p>
+              <h3 class="frame__title">Something to poke</h3>
+              <p>The smallest build that lets a real user react to the idea, not a slide about it.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="frame reveal">
+            <svg class="frame__art blueprint" viewBox="0 0 220 150" aria-hidden="true">
+              <path class="bp-tick" d="M10 18V10H18 M202 10H210V18 M210 132V140H202 M18 140H10V132"/>
+              <rect class="bp-block" x="40" y="42" width="52" height="20" rx="2"/>
+              <rect class="bp-block bp-block--accent" x="40" y="70" width="52" height="20" rx="2"/>
+              <rect class="bp-block" x="40" y="98" width="52" height="20" rx="2"/>
+              <path class="bp-line" d="M92 52 H118 M92 80 H118 M92 108 H118 M118 52 V108"/>
+              <rect class="bp-line" x="120" y="42" width="58" height="76"/>
+              <polyline class="bp-accent" stroke-width="1.4" points="126,104 134,98 142,100 150,86 158,90 166,68 172,72"/>
+              <circle class="bp-accent-fill" cx="172" cy="72" r="3"/>
+              <text class="bp-label" x="14" y="26">v0.3 · EARLY BUILD</text>
+            </svg>
+            <figcaption class="frame__meta">
+              <p class="frame__version">v0.3 — Early Build</p>
+              <h3 class="frame__title">First real signal</h3>
+              <p>Evidence starts pointing one way. Now — and only now — it's worth building for real.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="rule"></div></div>
+
+    <!-- ======================================================== APPROACH -->
+    <section id="approach">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <p class="eyebrow">003 — Method</p>
+            <h2 class="section-title">My approach</h2>
+          </div>
+          <p class="section-head__index">[ DISCOVER · VALIDATE · GROW ]</p>
+        </header>
+
+        <p class="approach__lede reveal">Every engagement is built around three simple questions.</p>
+
+        <ol class="pillars reveal">
+          <li class="pillar">
+            <span class="pillar__badge" aria-hidden="true"></span>
+            <p class="pillar__step">Phase 01</p>
+            <h3 class="pillar__title">Discover</h3>
+            <p>What opportunities are worth pursuing?</p>
+          </li>
+          <li class="pillar">
+            <span class="pillar__badge" aria-hidden="true"></span>
+            <p class="pillar__step">Phase 02</p>
+            <h3 class="pillar__title">Validate</h3>
+            <p>What evidence tells us we're solving the right problem?</p>
+          </li>
+          <li class="pillar">
+            <span class="pillar__badge" aria-hidden="true"></span>
+            <p class="pillar__step">Phase 03</p>
+            <h3 class="pillar__title">Grow</h3>
+            <p>How do we turn a promising idea into a successful product?</p>
+          </li>
+        </ol>
+
+        <p class="thesis reveal">The goal isn't to build more features. <span class="muted">It's to make better product decisions.</span></p>
+      </div>
+    </section>
+
+    <div class="container"><div class="rule"></div></div>
+
+    <!-- ========================================================= CONTACT -->
+    <section id="contact" class="close">
+      <div class="container">
+        <p class="tag reveal">Open for engagements</p>
+        <h2 class="close__title reveal">Start with the decision, not the code.</h2>
+        <p class="lede reveal">Tell me what you're exploring. We'll figure out which sprint gets you to evidence fastest.</p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="mailto:hello@leapfrog.se">Book a conversation</a>
+          <a class="btn btn--ghost" href="#services">Review the sprints</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================= FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <a class="logo" href="#top" aria-label="Leapfrog Labs — home">
+          <svg class="logo__mark" aria-hidden="true"><use href="#lf-mark"/></svg>
+          <span class="logo__word">LEAPFROG<small>LABS</small></span>
+        </a>
+        <p class="site-footer__meta">LEAPFROG AB · <span>&copy; <time data-current-year>2026</time></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
