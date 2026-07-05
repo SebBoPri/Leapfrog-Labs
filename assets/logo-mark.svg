@@ -1,4 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 90" width="900" height="90" role="img" aria-label="Leapfrog Labs mark">
-  <polygon points="0,0 897,44 0,34" fill="#ffffff"/>
-  <polygon points="0,56 897,46 0,90" fill="#ffffff"/>
+  <defs><linearGradient id="tf" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+    <stop offset="0.55" stop-color="#ffffff" stop-opacity="0.6"/>
+    <stop offset="1" stop-color="#ffffff" stop-opacity="0.05"/>
+  </linearGradient></defs>
+  <polygon points="0,0 897,44 0,34" fill="url(#tf)"/>
+  <polygon points="0,56 897,46 0,90" fill="url(#tf)"/>
 </svg>
