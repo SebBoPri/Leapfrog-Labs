@@ -25,7 +25,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:500;letter-spacing:-.02em;line-heig
 .nav.solid{background:rgba(7,7,8,.82);backdrop-filter:blur(12px);border-color:var(--line)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:76px;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
 .brand{display:flex;align-items:center}
-.lockup{width:132px;height:auto;display:block}
+.lockup{width:180px;height:auto;display:block}
 .lockup-lg{width:172px}
 .nav-links{display:flex;gap:38px}
 .nav-links a{font-size:13px;color:var(--ink-2);transition:color .2s}
