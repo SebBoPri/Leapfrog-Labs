@@ -24,9 +24,9 @@ h1,h2,h3{font-family:var(--disp);font-weight:500;letter-spacing:-.02em;line-heig
 .nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
 .nav.solid{background:rgba(7,7,8,.82);backdrop-filter:blur(12px);border-color:var(--line)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:76px;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
-.brand{display:flex;align-items:center;gap:13px;font-family:var(--disp);font-weight:500;letter-spacing:.14em;font-size:14px}
-.brand .mark{width:46px;color:var(--ink)}
-.brand small{color:var(--ink-3);letter-spacing:.2em;font-size:11px}
+.brand{display:flex;align-items:center}
+.lockup{width:132px;height:auto;display:block}
+.lockup-lg{width:172px}
 .nav-links{display:flex;gap:38px}
 .nav-links a{font-size:13px;color:var(--ink-2);transition:color .2s}
 .nav-links a:hover{color:var(--ink)}
@@ -98,6 +98,33 @@ h1,h2,h3{font-family:var(--disp);font-weight:500;letter-spacing:-.02em;line-heig
 .foot .meta{font-size:13px;color:var(--ink-3);line-height:1.7}
 .foot .meta a:hover{color:var(--ink)}
 
+/* 8b fieldnotes */
+.fieldnotes{padding:150px 0;border-top:1px solid var(--line)}
+.fn-head{margin-bottom:70px}
+.fn-head h2{font-size:clamp(30px,3.6vw,48px);margin-top:20px}
+.fn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.fn{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--bg-2);padding:34px 30px}
+.fn-log{font-family:var(--mono);font-size:10px;letter-spacing:.24em;color:var(--ink-3);margin-bottom:22px}
+.fn-sit{font-family:var(--disp);font-size:19px;font-weight:500;letter-spacing:-.01em;line-height:1.35;flex:1}
+.fn-out{margin-top:30px;padding-top:22px;border-top:1px solid var(--line)}
+.fn-lbl{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:9px}
+.fn-out p:last-child{font-size:14px;color:var(--ink-2);line-height:1.6}
+
+/* 8c reference projects */
+.cases{padding:150px 0;border-top:1px solid var(--line)}
+.cs-head{margin-bottom:70px}
+.cs-head h2{font-size:clamp(30px,3.6vw,48px);margin-top:20px}
+.cs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.cs{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--bg-2);padding:34px 30px}
+.cs-tag{font-family:var(--mono);font-size:10px;letter-spacing:.24em;color:var(--ink-3);margin-bottom:18px}
+.cs-tag span{letter-spacing:.14em}
+.cs-client{font-size:20px;letter-spacing:-.01em;margin-bottom:24px}
+.cs-body{flex:1}
+.cs-body div{padding:14px 0;border-top:1px solid var(--line)}
+.cs-body dt{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+.cs-body dd{font-size:13.5px;color:var(--ink-2);line-height:1.6}
+.cs-soon{margin-top:24px;padding-top:18px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
+
 /* 11 motion */
 .tw{animation:tw 5s ease-in-out infinite}
 @keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
@@ -113,5 +140,7 @@ h1,h2,h3{font-family:var(--disp);font-weight:500;letter-spacing:-.02em;line-heig
   .wk{grid-template-columns:44px 1fr;gap:26px}
   .wk-dia{grid-column:2}
   .appr-grid,.c-grid{grid-template-columns:1fr;gap:48px}
+  .fn-grid{grid-template-columns:1fr}
+  .cs-grid{grid-template-columns:1fr}
   .statement,.svcs,.approach,.contact{padding:110px 0}
 }
