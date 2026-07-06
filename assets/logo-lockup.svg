@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 158" width="640" height="158" role="img" aria-label="Leapfrog Labs">
+  <defs><linearGradient id="tf" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+    <stop offset="0.55" stop-color="#ffffff" stop-opacity="0.6"/>
+    <stop offset="1" stop-color="#ffffff" stop-opacity="0.05"/>
+  </linearGradient></defs>
+  <polygon points="0,0 638,31 0,24" fill="url(#tf)"/>
+  <polygon points="0,40 638,34 0,64" fill="url(#tf)"/>
+  <text x="0" y="146" textLength="640" lengthAdjust="spacing" font-family="Space Grotesk, sans-serif" font-size="52" font-weight="600" fill="#ffffff">LEAPFROG LABS</text>
+</svg>
