@@ -1,7 +1,9 @@
 /* ============================================================
-   LEAPFROG LABS v4  -  monochrome space / discovery
-   1 tokens  2 base  3 backdrop  4 nav  5 hero  6 statement
-   7 services  8 approach  9 contact  10 footer  11 motion  12 responsive
+   LEAPFROG LABS v5  -  monochrome space / discovery
+   1 tokens  2 base  3 nav  4 hero  6 problem
+   7 flagship (discovery sprint)  8 supporting sprints
+   9 approach  10 statement/POV  11 fieldnotes  12 cases
+   13 about  14 contact  15 footer  16 motion  17 responsive
    ============================================================ */
 :root{
   --bg:#070708; --bg-2:#0c0c0e; --line:rgba(255,255,255,.10); --line-2:rgba(255,255,255,.18);
@@ -20,14 +22,14 @@ a{color:inherit;text-decoration:none}
 h1,h2,h3{font-family:var(--disp);font-weight:500;letter-spacing:-.02em;line-height:1.04}
 .ic-ar{width:15px;height:15px}
 
-/* 4 nav */
+/* 3 nav */
 .nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
 .nav.solid{background:rgba(7,7,8,.82);backdrop-filter:blur(12px);border-color:var(--line)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:76px;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
 .brand{display:flex;align-items:center}
 .lockup{width:180px;height:auto;display:block}
 .lockup-lg{width:180px}
-.nav-links{display:flex;gap:38px}
+.nav-links{display:flex;gap:32px}
 .nav-links a{font-size:13px;color:var(--ink-2);transition:color .2s}
 .nav-links a:hover{color:var(--ink)}
 .btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--disp);font-size:14px;font-weight:500;padding:13px 24px;border:1px solid var(--line-2);transition:.25s;background:transparent;color:var(--ink);cursor:pointer}
@@ -35,39 +37,69 @@ h1,h2,h3{font-family:var(--disp);font-weight:500;letter-spacing:-.02em;line-heig
 .btn-solid{background:#fff;color:#000;border-color:#fff}
 .btn-solid:hover{background:#e4e4e2;border-color:#e4e4e2}
 
-/* 5 hero */
+/* 4 hero */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
 .stars{position:absolute;inset:0;width:100%;height:100%}
 .hero-in{position:relative;z-index:2;max-width:var(--max);margin:0 auto;padding:120px var(--pad) 90px;width:100%}
 .hero .eyebrow{display:block;margin-bottom:30px}
 .hero h1{font-size:clamp(46px,7vw,92px);letter-spacing:-.035em;max-width:13ch}
 .hero h1 .dim{color:var(--ink-3)}
-.hero .sub{margin-top:34px;color:var(--ink-2);max-width:44ch;font-size:17px}
+.hero .sub{margin-top:34px;color:var(--ink-2);max-width:48ch;font-size:17px}
 .hero-cta{display:flex;gap:16px;margin-top:44px;flex-wrap:wrap}
+.hero-check{margin-top:28px;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
 .hero-foot{position:absolute;bottom:34px;left:0;right:0;z-index:2}
 .hero-foot .wrap{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
 .traj-lbl{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;fill:#fff;opacity:.8}
 
-/* 6 statement */
-.statement{padding:170px 0;border-top:1px solid var(--line)}
-.statement p{font-family:var(--disp);font-size:clamp(26px,3.4vw,44px);font-weight:500;letter-spacing:-.025em;line-height:1.18;max-width:24ch}
-.statement .dim{color:var(--ink-3)}
+/* 6 problem */
+.problem{padding:160px 0;border-top:1px solid var(--line)}
+.prob-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:70px;align-items:start}
+.prob-state{font-family:var(--disp);font-size:clamp(26px,3.4vw,44px);font-weight:500;letter-spacing:-.025em;line-height:1.18;max-width:22ch;margin-top:26px}
+.prob-state .dim{color:var(--ink-3)}
+.prob-list{list-style:none;padding-top:10px}
+.prob-list li{display:flex;gap:16px;padding:17px 0;border-top:1px solid var(--line);font-size:15px;color:var(--ink-2);align-items:baseline}
+.prob-list li:first-child{border-top:none}
+.prob-list span{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
 
-/* 7 services */
+/* 7 flagship: the discovery sprint */
+.flag{padding:150px 0;border-top:1px solid var(--line)}
+.flag-head h2{font-size:clamp(36px,4.6vw,64px);margin-top:20px}
+.flag-head .lead{color:var(--ink-2);margin-top:24px;max-width:52ch;font-size:17px}
+.flag-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:70px;margin-top:74px;align-items:start}
+.phases{list-style:none}
+.phases li{display:grid;grid-template-columns:110px 1fr;gap:30px;padding:34px 0;border-top:1px solid var(--line)}
+.phases li:first-child{border-top:none;padding-top:0}
+.ph-wk{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);padding-top:7px}
+.phases h3{font-size:clamp(20px,2vw,26px)}
+.phases p{color:var(--ink-2);font-size:15px;margin-top:10px;max-width:52ch}
+.flag-note-row{padding-bottom:0}
+.flag-note{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--ink-3);line-height:1.9;margin-top:0!important}
+.flag-right{border:1px solid var(--line);background:var(--bg-2);padding:30px;position:sticky;top:106px}
+.flag-right .wk-dia{border:1px solid var(--line);background:var(--bg);width:100%;height:auto;display:block}
+.flag-meta{margin:24px 0 26px}
+.flag-meta div{padding:14px 0;border-top:1px solid var(--line)}
+.flag-meta div:first-child{border-top:none;padding-top:0}
+.flag-meta dt{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+.flag-meta dd{font-size:14px;color:var(--ink-2);line-height:1.6}
+.flag-right .btn{justify-content:center;width:100%}
+
+/* 8 supporting sprints */
 .svcs{padding:150px 0;border-top:1px solid var(--line)}
 .svcs-head{margin-bottom:80px}
 .svcs-head h2{font-size:clamp(30px,3.6vw,48px);margin-top:20px}
-.wk{display:grid;grid-template-columns:64px 1fr 300px;gap:48px;align-items:center;padding:56px 0;border-top:1px solid var(--line)}
-.wk-num{font-family:var(--mono);font-size:13px;color:var(--ink-3);padding-top:6px}
-.wk h3{font-size:clamp(22px,2.2vw,30px)}
-.wk-body>p{color:var(--ink-2);max-width:54ch;margin-top:14px;font-size:15.5px}
-.wk-meta{display:flex;gap:34px;margin-top:26px;flex-wrap:wrap}
-.wk-meta div{font-size:13px}
-.wk-meta dt{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:5px}
-.wk-meta dd{color:var(--ink-2)}
-.wk-dia{width:100%;height:auto;display:block;border:1px solid var(--line);background:var(--bg-2)}
+.sv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.sv{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--bg-2);padding:30px}
+.sv .wk-dia{width:100%;height:auto;display:block;border:1px solid var(--line);background:var(--bg);margin-bottom:28px}
+.sv h3{font-size:22px}
+.sv .one{color:var(--ink-2);font-size:14.5px;margin-top:10px}
+.sv-pts{list-style:none;margin-top:22px;flex:1}
+.sv-pts li{padding:10px 0;border-top:1px solid var(--line);font-size:13.5px;color:var(--ink-2)}
+.sv-meta{margin-top:24px}
+.sv-meta div{padding:11px 0;border-top:1px solid var(--line);font-size:13px}
+.sv-meta dt{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin-bottom:4px}
+.sv-meta dd{color:var(--ink-2);line-height:1.55}
 
-/* 8 approach */
+/* 9 approach */
 .approach{padding:150px 0;border-top:1px solid var(--line)}
 .appr-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
 .approach h2{font-size:clamp(30px,3.6vw,48px);margin-top:20px}
@@ -75,7 +107,50 @@ h1,h2,h3{font-family:var(--disp);font-weight:500;letter-spacing:-.02em;line-heig
 .orbit{width:100%;height:auto}
 .orb-lbl{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.12em;fill:#f4f4f2}
 
-/* 9 contact */
+/* 10 statement / POV interstitial */
+.statement{padding:170px 0;border-top:1px solid var(--line)}
+.statement p{font-family:var(--disp);font-size:clamp(26px,3.4vw,44px);font-weight:500;letter-spacing:-.025em;line-height:1.18;max-width:24ch}
+.statement .dim{color:var(--ink-3)}
+
+/* 11 fieldnotes */
+.fieldnotes{padding:150px 0;border-top:1px solid var(--line)}
+.fn-head{margin-bottom:70px}
+.fn-head h2{font-size:clamp(30px,3.6vw,48px);margin-top:20px}
+.fn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.fn{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--bg-2);padding:34px 30px}
+.fn-log{font-family:var(--mono);font-size:10px;letter-spacing:.24em;color:var(--ink-3);margin-bottom:22px}
+.fn-sit{font-family:var(--disp);font-size:19px;font-weight:500;letter-spacing:-.01em;line-height:1.35;flex:1}
+.fn-out{margin-top:30px;padding-top:22px;border-top:1px solid var(--line)}
+.fn-lbl{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:9px}
+.fn-out p:last-child{font-size:14px;color:var(--ink-2);line-height:1.6}
+
+/* 12 cases */
+.cases{padding:150px 0;border-top:1px solid var(--line)}
+.cs-head{margin-bottom:70px}
+.cs-head h2{font-size:clamp(30px,3.6vw,48px);margin-top:20px}
+.cs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.cs{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--bg-2);padding:34px 30px}
+.cs-tag{font-family:var(--mono);font-size:10px;letter-spacing:.24em;color:var(--ink-3);margin-bottom:18px}
+.cs-tag span{letter-spacing:.14em}
+.cs-client{font-size:20px;letter-spacing:-.01em;margin-bottom:24px}
+.cs-body{flex:1}
+.cs-body div{padding:14px 0;border-top:1px solid var(--line)}
+.cs-body dt{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+.cs-body dd{font-size:13.5px;color:var(--ink-2);line-height:1.6}
+.cs-soon{margin-top:24px;padding-top:18px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
+
+/* 13 about */
+.about{padding:150px 0;border-top:1px solid var(--line)}
+.ab-grid{display:grid;grid-template-columns:340px 1fr;gap:70px;align-items:start}
+.portrait{aspect-ratio:4/5;border:1px solid var(--line);background:var(--bg-2);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3)}
+.about h2{font-size:clamp(30px,3.6vw,48px);margin-top:20px}
+.about .lead{color:var(--ink-2);margin-top:22px;max-width:52ch;font-size:16px}
+.ab-pts{margin-top:36px}
+.ab-pts div{padding:16px 0;border-top:1px solid var(--line)}
+.ab-pts dt{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+.ab-pts dd{font-size:14.5px;color:var(--ink-2);line-height:1.7;max-width:60ch}
+
+/* 14 contact */
 .contact{padding:150px 0;border-top:1px solid var(--line)}
 .c-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
 .contact h2{font-size:clamp(30px,4vw,54px);margin-top:20px;max-width:12ch}
@@ -92,40 +167,13 @@ h1,h2,h3{font-family:var(--disp);font-weight:500;letter-spacing:-.02em;line-heig
 .cform-alt{font-size:12.5px;color:var(--ink-3);text-align:center}
 .cform-alt a{color:var(--ink-2);border-bottom:1px solid var(--line-2)}
 
-/* 10 footer */
+/* 15 footer */
 .foot{padding:44px 0;border-top:1px solid var(--line)}
 .foot-in{display:flex;justify-content:space-between;align-items:center;gap:26px;flex-wrap:wrap}
 .foot .meta{font-size:13px;color:var(--ink-3);line-height:1.7}
 .foot .meta a:hover{color:var(--ink)}
 
-/* 8b fieldnotes */
-.fieldnotes{padding:150px 0;border-top:1px solid var(--line)}
-.fn-head{margin-bottom:70px}
-.fn-head h2{font-size:clamp(30px,3.6vw,48px);margin-top:20px}
-.fn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.fn{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--bg-2);padding:34px 30px}
-.fn-log{font-family:var(--mono);font-size:10px;letter-spacing:.24em;color:var(--ink-3);margin-bottom:22px}
-.fn-sit{font-family:var(--disp);font-size:19px;font-weight:500;letter-spacing:-.01em;line-height:1.35;flex:1}
-.fn-out{margin-top:30px;padding-top:22px;border-top:1px solid var(--line)}
-.fn-lbl{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:9px}
-.fn-out p:last-child{font-size:14px;color:var(--ink-2);line-height:1.6}
-
-/* 8c reference projects */
-.cases{padding:150px 0;border-top:1px solid var(--line)}
-.cs-head{margin-bottom:70px}
-.cs-head h2{font-size:clamp(30px,3.6vw,48px);margin-top:20px}
-.cs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.cs{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--bg-2);padding:34px 30px}
-.cs-tag{font-family:var(--mono);font-size:10px;letter-spacing:.24em;color:var(--ink-3);margin-bottom:18px}
-.cs-tag span{letter-spacing:.14em}
-.cs-client{font-size:20px;letter-spacing:-.01em;margin-bottom:24px}
-.cs-body{flex:1}
-.cs-body div{padding:14px 0;border-top:1px solid var(--line)}
-.cs-body dt{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
-.cs-body dd{font-size:13.5px;color:var(--ink-2);line-height:1.6}
-.cs-soon{margin-top:24px;padding-top:18px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
-
-/* 11 motion */
+/* 16 motion */
 .tw{animation:tw 5s ease-in-out infinite}
 @keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
 .traj{stroke-dashoffset:0;animation:trajIn 3.2s ease-out .4s both}
@@ -134,13 +182,13 @@ h1,h2,h3{font-family:var(--disp);font-weight:500;letter-spacing:-.02em;line-heig
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.tw,.traj{animation:none}.reveal{opacity:1;transform:none;transition:none}}
 
-/* 12 responsive */
+/* 17 responsive */
 @media(max-width:920px){
   .nav-links{display:none}
-  .wk{grid-template-columns:44px 1fr;gap:26px}
-  .wk-dia{grid-column:2}
-  .appr-grid,.c-grid{grid-template-columns:1fr;gap:48px}
-  .fn-grid{grid-template-columns:1fr}
-  .cs-grid{grid-template-columns:1fr}
-  .statement,.svcs,.approach,.contact{padding:110px 0}
+  .prob-grid,.flag-grid,.appr-grid,.c-grid,.ab-grid{grid-template-columns:1fr;gap:48px}
+  .sv-grid,.fn-grid,.cs-grid{grid-template-columns:1fr}
+  .phases li{grid-template-columns:1fr;gap:8px;padding:26px 0}
+  .flag-right{position:static}
+  .portrait{max-width:340px}
+  .problem,.svcs,.flag,.approach,.statement,.fieldnotes,.cases,.about,.contact{padding:100px 0}
 }
